@@ -1,0 +1,14 @@
+{
+  "name": "namespace-css-loader",
+  "version": "0.0.0",
+  "description": "runs namespace-css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeff Ling <jeff@bench.co>",
+  "license": "ISC",
+  "peerDependencies": {
+    "namespace-css": "^0.1.3"
+  }
+}
