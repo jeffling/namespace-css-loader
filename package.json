@@ -1,6 +1,6 @@
 {
   "name": "namespace-css-loader",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "runs namespace-css",
   "main": "index.js",
   "scripts": {
