@@ -8,7 +8,7 @@
   },
   "author": "Jeff Ling <jeff@bench.co>",
   "license": "ISC",
-  "peerDependencies": {
+  "dependencies": {
     "namespace-css": "git://github.com/jeffling/namespace-css"
   }
 }
