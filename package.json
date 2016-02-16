@@ -9,6 +9,6 @@
   "author": "Jeff Ling <jeff@bench.co>",
   "license": "ISC",
   "dependencies": {
-    "namespace-css": "git://github.com/jeffling/namespace-css"
+    "namespace-css": "^0.1.3"
   }
 }
