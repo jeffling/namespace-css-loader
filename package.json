@@ -9,6 +9,7 @@
   "author": "Jeff Ling <jeff@bench.co>",
   "license": "ISC",
   "dependencies": {
+    "loader-utils": "^0.2.15",
     "namespace-css": "git://github.com/jeffling/namespace-css"
   }
 }

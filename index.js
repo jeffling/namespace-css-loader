@@ -1,13 +1,15 @@
 // loader runs namespace-css on file
 
 var namespaceCss = require('namespace-css');
+var loaderUtils = require('loader-utils');
 var Readable = require('stream').Readable;
 
 module.exports = function(source) {
 	this.cacheable();
 
 	var callback = this.async();
-	var query = this.query.slice(1); 
+	var options = loaderUtils.parseQuery(this.query);
+	options.selector = options.selector || '';
 	var result = "";
 
 	var s = new Readable;
@@ -15,9 +17,7 @@ module.exports = function(source) {
 	s.push(null);
 
 
-	var resultStream = s.pipe(namespaceCss({
-		selector: query 
-	}));
+	var resultStream = s.pipe(namespaceCss(options));
 	
 	resultStream.on('data', function(data) {
 		result += data;
